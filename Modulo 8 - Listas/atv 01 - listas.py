@@ -8,8 +8,18 @@ estoque = [100, 150, 100, 120, 70, 180, 80]
 
 busca = input("Insira o nome do produto: ")
 
-if busca in produtos:
+# Usando If e Else:
+
+#if busca in produtos:
+#    i = produtos.index(busca)
+#    print("Você tem {} unidades do produto {} em estoque" .format(estoque[i], produtos[i]))
+#else:
+#    print("Produto não encontrado")
+
+# Usando Try:
+
+try:
     i = produtos.index(busca)
     print("Você tem {} unidades do produto {} em estoque" .format(estoque[i], produtos[i]))
-else:
+except:
     print("Produto não encontrado")
