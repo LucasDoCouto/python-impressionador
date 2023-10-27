@@ -34,7 +34,7 @@ print('O melhor mês representa {:.1%} do faturamento anual' .format(percentual)
 # Dica: o método remove retira um item da lista.
 top3 = []
 
-consulta = vendas_total
+consulta = vendas_total.copy()
 
 i = 1
 while i <= 3:
